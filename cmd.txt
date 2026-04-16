@@ -1,0 +1,52 @@
+# Commands to Run
+
+Run these commands in order. Each step must complete before the next.
+
+---
+
+## 1. Install Python Dependencies (from the project venv)
+
+```bash
+cd /home/darsh_run/DS_Final/sentinel_ds
+pip install fastapi "uvicorn[standard]"
+```
+
+## 2. Install Node Dependencies (for the React frontend)
+
+```bash
+cd /home/darsh_run/DS_Final/sentinel_ds/frontend
+npm install
+```
+
+## 3. Start the FastAPI Backend (Terminal 1)
+
+```bash
+cd /home/darsh_run/DS_Final/sentinel_ds
+uvicorn api:app --host 0.0.0.0 --port 8000 --reload
+```
+
+Keep this running. Open a **second terminal** for the next step.
+
+## 4. Start the React Dev Server (Terminal 2)
+
+```bash
+cd /home/darsh_run/DS_Final/sentinel_ds/frontend
+npm run dev
+```
+
+## 5. Open the Dashboard
+
+Open **http://localhost:5173** in your browser.
+
+---
+
+## Optional: Run the Full AI Pipeline
+
+To run the full XGBoost + Bandit pipeline (generates real data for the dashboard):
+
+```bash
+cd /home/darsh_run/DS_Final/sentinel_ds
+python3 main.py
+```
+
+This will populate `output/state.json` which the dashboard reads automatically.

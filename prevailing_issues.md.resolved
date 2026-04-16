@@ -1,0 +1,26 @@
+# Current Prevailing Issues: Live Stream & EDA Tab
+
+Here is a summary of the current issues affecting the Adaptive Triage Dashboard, specifically focusing on why the stream values are stuck and why the EDA tab shows 0%.
+
+## 1. Why are stream scores stuck at 26.1%?
+
+When you run the stream, you are seeing flows (both `Benign` and `DoS attacks-Hulk`) receive a score of **26.1%** or **27.8%** and immediately get an action of `Dismiss`.
+
+**Root Cause Analysis:**
+*   **The Pipeline Works:** The column mapping fix we just added successfully matches all 61 features correctly. The data is properly reaching the XGBoost model.
+*   **Calibration at Play:** The XGBoost model natively outputs raw scores (e.g., `0.0`). The system then uses an Isotonic Regression Calibrator to turn that score into a real-world probability. A calibrated score of `26.1%` means the underlying XGBoost model predicted exactly `0.0` (Perfectly Benign).
+*   **The Web Detector Bug:** Your `DoS attacks-Hulk` traffic operates heavily on web ports (e.g., HTTP Port `80`). In `api.py`, any traffic going over Port 80 gets intercepted and routed to the specialized `web_detector` instead of the main detector.
+*   **The Disconnect:** The `web_detector` seems to evaluate those specific `Hulk` features as perfectly benign (raw score `0.0`), which then calibrates out to `26.1%`. This creates False Negatives (`FN`). When we manually tested `DoS attacks-SlowHTTPTest` or `Bot` traffic on completely regular non-web ports, the main detector correctly fired scores of `99.9%` (`1.0`).
+
+## 2. Why does the EDA Tab show 0% on all feature bars?
+
+In the EDA Tab, you noticed that the Feature Importance bars all say `0.0%`.
+
+**Root Cause Analysis:**
+*   When we created the `/api/eda-stats` endpoint, we hardcoded the generic statistics so the dashboard wouldn't crash.
+*   However, the `Feature Importance` array needs to be dynamically populated by querying the active XGBoost model (`XGBDetector.get_feature_importances()`). Since this isn't hooked up to the live model weights yet, the frontend receives exactly `0` for the gain/weight, causing every bar to shrink to zero and format as `0%`.
+
+## Recommended Next Steps
+
+1.  **Bypass the Web Detector for Stream Testing:** Temporarily disable the `web_detector` routing in `api.py` for the stream endpoint so that `Hulk` traffic is scored by the main model (which is much more robust against volumetric DoS). 
+2.  **Hook up Dynamic Feature Importances:** Update the `/api/eda-stats` endpoint to query `detector.get_feature_importances()` so the EDA tab reflects exactly which features your trained XGBoost model is relying on.

@@ -1,0 +1,11 @@
+nohup: ignoring input
+FastAPI Backend
+   Backend running (PID: 48326). Logs in /home/darsh_run/DS_Final/sentinel_ds/backend.log
+Frontend
+   Frontend running (PID: 48327). Logs in /home/darsh_run/DS_Final/sentinel_ds/frontend/frontend.log
+   Dashboard: http://localhost:5173
+   API Base:  http://localhost:8000
+
+
+🛑 Shutting down services...
+Done.
