@@ -1,0 +1,241 @@
+INFO:     Will watch for changes in these directories: ['/home/darsh_run/DS_Final/sentinel_ds']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [8517] using WatchFiles
+INFO:     Started server process [8526]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58012 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58020 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58026 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58040 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56828 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56844 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56854 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40682 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40684 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40690 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52708 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52718 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52726 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52740 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58274 - "GET /api/pipeline-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58290 - "GET /api/pipeline-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58260 - "GET /api/data-sample HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58296 - "GET /api/data-sample HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58306 - "GET /api/state HTTP/1.1" 200 OK
+[Detector] Initialised XGBoost on cuda  (depth=8, lr=0.08, n_est=250)
+[Detector] Model loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/detector.json
+[Detector] Calibrator loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/calibrator.joblib
+[Detector] Initialised XGBoost on cuda  (depth=8, lr=0.08, n_est=250)
+[Detector] Model loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/ddos_detector.json
+[Detector] Calibrator loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/ddos_calibrator.joblib
+[API] DDoS detector loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/ddos_detector.json
+[Detector] Initialised XGBoost on cuda  (depth=8, lr=0.08, n_est=250)
+[Detector] Model loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/auth_detector.json
+[Detector] Calibrator loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/auth_calibrator.joblib
+[API] Auth detector loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/auth_detector.json
+[Detector] Initialised XGBoost on cuda  (depth=8, lr=0.08, n_est=250)
+[Detector] Model loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/web_detector.json
+[Detector] Calibrator loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/web_calibrator.joblib
+[API] Web detector loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/web_detector.json
+[Bandit] Q-table loaded ← /home/darsh_run/DS_Final/sentinel_ds/output  shape=(20, 20, 5, 3, 3)  visits=12,101,895
+[API] Scaler loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/scaler.joblib
+[API] BehaviourAggregator loaded ← /home/darsh_run/DS_Final/sentinel_ds/output/behaviour_agg.joblib  (92 sources)
+[DataLoader] Found 29 data file(s)
+[DataLoader] Reading: Botnet-Friday-02-03-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 1 (.parquet): 500,000 rows
+INFO:     127.0.0.1:58318 - "GET /api/eda-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58326 - "GET /api/state HTTP/1.1" 200 OK
+[DataLoader] Found 29 data file(s)
+[DataLoader] Reading: Botnet-Friday-02-03-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 1 (.parquet): 500,000 rows
+INFO:     127.0.0.1:58332 - "GET /api/eda-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58346 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53544 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53552 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53566 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53570 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53200 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53204 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53210 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38664 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38680 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38690 - "GET /api/plots/recall_precision.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38704 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38712 - "GET /api/plots/action_distribution.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38716 - "GET /api/plots/cumulative_reward.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38720 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50522 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50532 - "GET /api/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50540 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50554 - "GET /api/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50556 - "GET /api/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50564 - "GET /api/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50566 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50572 - "GET /api/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59078 - "GET /api/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59086 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59094 - "GET /api/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59098 - "GET /api/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59112 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59114 - "GET /api/progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59126 - "GET /api/pipeline-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59136 - "GET /api/pipeline-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59152 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59166 - "GET /api/run-stream?n_flows=50&attack_ratio=0.4&delay_ms=100 HTTP/1.1" 200 OK
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+/home/darsh_run/DS_Final/sentinel_ds/src/data_loader.py:182: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  out_df = out_df.replace([np.inf, -np.inf], np.nan)
+INFO:     127.0.0.1:59172 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60074 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60068 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60064 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47918 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40870 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40874 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40890 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40902 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40916 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40926 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40934 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40942 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40946 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40956 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40970 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40978 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40992 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41002 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41018 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41034 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41044 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41058 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41070 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44160 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44166 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44168 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44180 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38682 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38692 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38704 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34276 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34280 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34286 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39312 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45104 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45818 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45824 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45826 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56328 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56330 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56334 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56338 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50180 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50192 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50208 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50218 - "POST /api/test-csv?freeze=true HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46336 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46348 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46362 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46378 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40620 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40632 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40638 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55116 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55122 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55132 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55148 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54648 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54650 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54666 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50244 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50252 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50262 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50276 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41026 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41042 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41058 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41080 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41090 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41094 - "GET /api/state HTTP/1.1" 200 OK
+[DataLoader] Found 29 data file(s)
+[DataLoader] Reading: Botnet-Friday-02-03-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 1 (.parquet): 500,000 rows
+INFO:     127.0.0.1:41096 - "GET /api/eda-stats HTTP/1.1" 200 OK
+[DataLoader] Found 29 data file(s)
+[DataLoader] Reading: Botnet-Friday-02-03-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 1 (.parquet): 500,000 rows
+INFO:     127.0.0.1:41104 - "GET /api/eda-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34530 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34536 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34550 - "GET /api/pipeline-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34552 - "GET /api/pipeline-stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34556 - "GET /api/plots/action_distribution.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34572 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34586 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33318 - "GET /api/state HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8526]
+INFO:     Stopping reloader process [8517]

@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0.0",
+  "records": [
+    {
+      "rank": "anewco17734288758071",
+      "description": "",
+      "name": "Attacks",
+      "id": "dzKWXVdJ1a3Xsqyp4BwR",
+      "collectionId": "",
+      "type": "collection",
+      "deleted": false,
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "variables": {},
+        "variablesOrder": []
+      }
+    },
+    {
+      "type": "api",
+      "id": "5NMJCmmMSzQaqtpYdDHs",
+      "deleted": false,
+      "data": {
+        "request": {
+          "headers": [],
+          "url": "http://16.170.183.237:8000/login",
+          "queryParams": [],
+          "method": "POST",
+          "body": "{\n  \"username\": \"admin\",\n  \"password\": \"wrongpass\"\n}",
+          "contentType": "application/json"
+        },
+        "type": "http",
+        "response": null,
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "scripts": {
+          "postResponse": "",
+          "preRequest": ""
+        },
+        "examples": []
+      },
+      "rank": "auntit17734291831941",
+      "name": "login",
+      "collectionId": "dzKWXVdJ1a3Xsqyp4BwR"
+    },
+    {
+      "collectionId": "dzKWXVdJ1a3Xsqyp4BwR",
+      "name": "api_auth_login",
+      "rank": "av",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "scripts": {
+          "postResponse": "",
+          "preRequest": ""
+        },
+        "request": {
+          "contentType": "application/json",
+          "body": "{\n  \"username\": \"guest\",\n  \"password\": \"guest123\"\n}",
+          "method": "POST",
+          "queryParams": [],
+          "url": "http://16.170.183.237:8000/api/auth/login",
+          "headers": []
+        },
+        "response": null,
+        "type": "http",
+        "examples": []
+      },
+      "type": "api",
+      "id": "qiDeSHmtdi6jHUIVStlj",
+      "deleted": false
+    },
+    {
+      "deleted": false,
+      "id": "atwvTuiaplEheZEV8pwL",
+      "type": "api",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "scripts": {
+          "postResponse": "",
+          "preRequest": ""
+        },
+        "request": {
+          "contentType": "application/json",
+          "headers": [],
+          "url": "http://16.170.183.237:8000/admin",
+          "body": "",
+          "method": "GET",
+          "queryParams": []
+        },
+        "response": null,
+        "type": "http",
+        "examples": []
+      },
+      "rank": "aw",
+      "collectionId": "dzKWXVdJ1a3Xsqyp4BwR",
+      "name": "admin"
+    },
+    {
+      "name": "config_endpoint",
+      "collectionId": "dzKWXVdJ1a3Xsqyp4BwR",
+      "rank": "ax",
+      "data": {
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "scripts": {
+          "postResponse": "",
+          "preRequest": ""
+        },
+        "request": {
+          "contentType": "text/plain",
+          "url": "http://16.170.183.237:8000/config",
+          "headers": [],
+          "method": "GET",
+          "queryParams": [],
+          "body": ""
+        },
+        "response": null,
+        "type": "http",
+        "examples": []
+      },
+      "deleted": false,
+      "id": "SIGJRdg1YJPbkKdNDs5S",
+      "type": "api"
+    },
+    {
+      "rank": "ay",
+      "collectionId": "dzKWXVdJ1a3Xsqyp4BwR",
+      "name": "Internal",
+      "type": "api",
+      "deleted": false,
+      "id": "0NOM6xBbUFwioABcXi79",
+      "data": {
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "scripts": {
+          "postResponse": "",
+          "preRequest": ""
+        },
+        "request": {
+          "method": "GET",
+          "queryParams": [],
+          "body": "",
+          "url": "http://16.170.183.237:8000/internal",
+          "headers": [],
+          "contentType": "text/plain"
+        },
+        "response": null,
+        "type": "http",
+        "examples": []
+      }
+    },
+    {
+      "name": "Dashboard",
+      "collectionId": "dzKWXVdJ1a3Xsqyp4BwR",
+      "rank": "az",
+      "data": {
+        "scripts": {
+          "postResponse": "",
+          "preRequest": ""
+        },
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "response": null,
+        "type": "http",
+        "request": {
+          "headers": [],
+          "url": "http://16.170.183.237:8000/dashboard",
+          "queryParams": [],
+          "method": "GET",
+          "body": "",
+          "contentType": "text/plain"
+        },
+        "examples": []
+      },
+      "type": "api",
+      "id": "nEe28qDIwy4nCZJminN2",
+      "deleted": false
+    },
+    {
+      "rank": "b00",
+      "collectionId": "dzKWXVdJ1a3Xsqyp4BwR",
+      "name": "Settings",
+      "deleted": false,
+      "id": "Sf8Z6QN5yfXJ7t2Filc1",
+      "type": "api",
+      "data": {
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "scripts": {
+          "postResponse": "",
+          "preRequest": ""
+        },
+        "request": {
+          "headers": [],
+          "url": "http://16.170.183.237:8000/settings",
+          "body": "",
+          "queryParams": [],
+          "method": "GET",
+          "contentType": "text/plain"
+        },
+        "type": "http",
+        "response": null,
+        "examples": []
+      }
+    },
+    {
+      "data": {
+        "auth": {
+          "currentAuthType": "INHERIT",
+          "authConfigStore": {}
+        },
+        "scripts": {
+          "postResponse": "",
+          "preRequest": ""
+        },
+        "request": {
+          "queryParams": [],
+          "method": "GET",
+          "body": "",
+          "url": "http://16.170.183.237:8000/.env",
+          "headers": [],
+          "contentType": "text/plain"
+        },
+        "response": null,
+        "type": "http",
+        "examples": []
+      },
+      "type": "api",
+      "id": "dNsL6a6TMKXbc8dO5x3d",
+      "deleted": false,
+      "name": "Dot",
+      "collectionId": "dzKWXVdJ1a3Xsqyp4BwR",
+      "rank": "b01"
+    },
+    {
+      "data": {
+        "scripts": {
+          "postResponse": "",
+          "preRequest": ""
+        },
+        "auth": {
+          "authConfigStore": {},
+          "currentAuthType": "INHERIT"
+        },
+        "type": "http",
+        "response": null,
+        "request": {
+          "contentType": "text/plain",
+          "headers": [],
+          "url": "http://16.170.183.237:8000/api/keys",
+          "body": "",
+          "queryParams": [],
+          "method": "GET"
+        },
+        "examples": []
+      },
+      "type": "api",
+      "id": "atUaPTYLUOM76s9Iok8Z",
+      "deleted": false,
+      "name": "API",
+      "collectionId": "dzKWXVdJ1a3Xsqyp4BwR",
+      "rank": "b02"
+    }
+  ]
+}

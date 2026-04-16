@@ -1,0 +1,369 @@
+nohup: ignoring input
+======================================================================
+  Adaptive Triage Engine — Full Pipeline
+======================================================================
+
+[Pipeline] 29 files total → 23 train, 6 test
+[Detector] Initialised XGBoost on cuda  (depth=8, lr=0.08, n_est=250)
+[DataLoader] Found 23 data file(s)
+[DataLoader] Reading: Botnet-Friday-02-03-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 1 (.parquet): 500,000 rows
+[DataLoader]   chunk 2 (.parquet): 271,587 rows
+[DataLoader] Reading: Bruteforce-Wednesday-14-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 3 (.parquet): 500,000 rows
+  [Train] Chunk 0: acc=0.9984  threat_rate=28.91%
+[DataLoader]   chunk 4 (.parquet): 119,346 rows
+  [Train] Chunk 1: skipped (single class)
+[DataLoader] Reading: DDoS1-Tuesday-20-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 5 (.parquet): 500,000 rows
+  [Train] Chunk 2: acc=0.9952  threat_rate=18.82%
+[DataLoader]   chunk 6 (.parquet): 454,846 rows
+  [Train] Chunk 3: skipped (single class)
+[DataLoader] Reading: DDoS2-Wednesday-21-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 7 (.parquet): 500,000 rows
+  [Train] Chunk 4: acc=0.0022  threat_rate=99.76%
+[DataLoader]   chunk 8 (.parquet): 61,396 rows
+  [Train] Chunk 5: acc=0.8293  threat_rate=16.84%
+[DataLoader] Reading: DoS1-Thursday-15-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 9 (.parquet): 500,000 rows
+  [Train] Chunk 6: acc=0.6000  threat_rate=39.97%
+[DataLoader]   chunk 10 (.parquet): 294,812 rows
+  [Train] Chunk 7: acc=0.9880  threat_rate=1.19%
+[DataLoader] Reading: DoS2-Friday-16-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 11 (.parquet): 500,000 rows
+  [Train] Chunk 8: acc=0.9966  threat_rate=10.26%
+[DataLoader]   chunk 12 (.parquet): 91,873 rows
+  [Train] Chunk 9: skipped (single class)
+[DataLoader] Reading: Infil1-Wednesday-28-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 13 (.parquet): 456,873 rows
+  [Train] Chunk 10: acc=0.7417  threat_rate=25.85%
+[DataLoader] Reading: Infil2-Thursday-01-03-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 14 (.parquet): 249,170 rows
+  [Train] Chunk 11: acc=0.8256  threat_rate=17.44%
+[DataLoader] Reading: Web1-Thursday-22-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 15 (.parquet): 500,000 rows
+  [Train] Chunk 12: acc=0.8715  threat_rate=12.36%
+[DataLoader]   chunk 16 (.parquet): 330,224 rows
+  [Train] Chunk 13: acc=0.7571  threat_rate=24.90%
+[DataLoader] Reading: Web2-Friday-23-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 17 (.parquet): 500,000 rows
+  [Train] Chunk 14: acc=0.9988  threat_rate=0.07%
+[DataLoader]   chunk 18 (.parquet): 329,405 rows
+  [Train] Chunk 15: skipped (single class)
+[DataLoader] Reading: bccc-cpacket-cloud-ddos-2024-merged.parquet
+[DataLoader]   chunk 19 (.parquet): 500,000 rows
+  [Train] Chunk 16: acc=0.9982  threat_rate=0.11%
+[DataLoader]   chunk 20 (.parquet): 40,494 rows
+  [Train] Chunk 17: skipped (single class)
+[DataLoader] Reading: botnet_ares.csv
+[DataLoader]   chunk 21 (.csv): 5,508 rows
+  [Train] Chunk 18: acc=0.6405  threat_rate=35.95%
+[DataLoader] Reading: ddos_loit.csv
+[DataLoader]   chunk 22 (.csv): 95,733 rows
+  [Train] Chunk 19: acc=0.7145  threat_rate=28.55%
+[DataLoader] Reading: dos_golden_eye.csv
+[DataLoader]   chunk 23 (.csv): 8,364 rows
+  [Train] Chunk 20: skipped (single class)
+[DataLoader] Reading: dos_hulk.csv
+[DataLoader]   chunk 24 (.csv): 349,240 rows
+  [Train] Chunk 21: skipped (single class)
+[DataLoader] Reading: dos_slowhttptest.csv
+[DataLoader]   chunk 25 (.csv): 6,860 rows
+  [Train] Chunk 22: skipped (single class)
+[DataLoader] Reading: dos_slowloris.csv
+[DataLoader]   chunk 26 (.csv): 5,177 rows
+  [Train] Chunk 23: skipped (single class)
+[DataLoader] Reading: friday_benign.csv
+[DataLoader]   chunk 27 (.csv): 364,102 rows
+  [Train] Chunk 24: skipped (single class)
+[DataLoader] Reading: ftp_patator.csv
+[DataLoader]   chunk 28 (.csv): 9,531 rows
+  [Train] Chunk 25: skipped (single class)
+[DataLoader] Reading: heartbleed.csv
+[DataLoader]   chunk 29 (.csv): 12 rows
+  [Train] Chunk 26: skipped (single class)
+[DataLoader] Reading: monday_benign.csv
+[DataLoader]   chunk 30 (.csv): 495,338 rows
+  [Train] Chunk 27: skipped (single class)
+[DataLoader] Reading: portscan.csv
+[DataLoader]   chunk 31 (.csv): 161,323 rows
+  [Train] Chunk 28: skipped (single class)
+[DataLoader] Reading: ssh_patator-new.csv
+[DataLoader]   chunk 32 (.csv): 5,949 rows
+  [Train] Chunk 29: skipped (single class)
+[DataLoader] Done — yielded 32 total chunk(s).
+  [Validation] 2 chunks, acc=0.0000
+  [Features] Top-5 importance: Fwd Seg Size Min, Flow IAT Mean, Flow Duration, Flow IAT Std, Bwd IAT Max
+[Detector] Model saved → /home/darsh_run/DS_Final/sentinel_ds/output/detector.json
+[Features] Scaler saved → /home/darsh_run/DS_Final/sentinel_ds/output/scaler.joblib
+[Detector] Initialised XGBoost on cuda  (depth=8, lr=0.08, n_est=250)
+[DataLoader] Found 23 data file(s)
+[DataLoader] Reading: Botnet-Friday-02-03-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 1 (.parquet): 500,000 rows
+[DataLoader]   chunk 2 (.parquet): 271,587 rows
+[DataLoader] Reading: Bruteforce-Wednesday-14-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 3 (.parquet): 500,000 rows
+[DataLoader]   chunk 4 (.parquet): 119,346 rows
+[DataLoader] Reading: DDoS1-Tuesday-20-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 5 (.parquet): 500,000 rows
+[DataLoader]   chunk 6 (.parquet): 454,846 rows
+[DataLoader] Reading: DDoS2-Wednesday-21-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 7 (.parquet): 500,000 rows
+[DataLoader]   chunk 8 (.parquet): 61,396 rows
+[DataLoader] Reading: DoS1-Thursday-15-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 9 (.parquet): 500,000 rows
+[DataLoader]   chunk 10 (.parquet): 294,812 rows
+[DataLoader] Reading: DoS2-Friday-16-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 11 (.parquet): 500,000 rows
+[DataLoader]   chunk 12 (.parquet): 91,873 rows
+[DataLoader] Reading: Infil1-Wednesday-28-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 13 (.parquet): 456,873 rows
+[DataLoader] Reading: Infil2-Thursday-01-03-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 14 (.parquet): 249,170 rows
+[DataLoader] Reading: Web1-Thursday-22-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 15 (.parquet): 500,000 rows
+[DataLoader]   chunk 16 (.parquet): 330,224 rows
+[DataLoader] Reading: Web2-Friday-23-02-2018_TrafficForML_CICFlowMeter.parquet
+[DataLoader]   chunk 17 (.parquet): 500,000 rows
+[DataLoader]   chunk 18 (.parquet): 329,405 rows
+[DataLoader] Reading: bccc-cpacket-cloud-ddos-2024-merged.parquet
+[DataLoader]   chunk 19 (.parquet): 500,000 rows
+[DataLoader]   chunk 20 (.parquet): 40,494 rows
+[DataLoader] Reading: botnet_ares.csv
+[DataLoader]   chunk 21 (.csv): 5,508 rows
+[DataLoader] Reading: ddos_loit.csv
+[DataLoader]   chunk 22 (.csv): 95,733 rows
+[DataLoader] Reading: dos_golden_eye.csv
+[DataLoader]   chunk 23 (.csv): 8,364 rows
+[DataLoader] Reading: dos_hulk.csv
+[DataLoader]   chunk 24 (.csv): 349,240 rows
+[DataLoader] Reading: dos_slowhttptest.csv
+[DataLoader]   chunk 25 (.csv): 6,860 rows
+[DataLoader] Reading: dos_slowloris.csv
+[DataLoader]   chunk 26 (.csv): 5,177 rows
+[DataLoader] Reading: friday_benign.csv
+[DataLoader]   chunk 27 (.csv): 364,102 rows
+[DataLoader] Reading: ftp_patator.csv
+[DataLoader]   chunk 28 (.csv): 9,531 rows
+[DataLoader] Reading: heartbleed.csv
+[DataLoader]   chunk 29 (.csv): 12 rows
+[DataLoader] Reading: monday_benign.csv
+[DataLoader]   chunk 30 (.csv): 495,338 rows
+[DataLoader] Reading: portscan.csv
+[DataLoader]   chunk 31 (.csv): 161,323 rows
+[DataLoader] Reading: ssh_patator-new.csv
+[DataLoader]   chunk 32 (.csv): 5,949 rows
+[DataLoader] Done — yielded 32 total chunk(s).
+[Detector] Model saved → /home/darsh_run/DS_Final/sentinel_ds/output/web_detector.json
+  [WebDet] Trained on 2 web-filtered chunks → web_detector.json
+[Detector] Calibration fitted  (val_size=167272, label_rate=1.000, cal_mean=1.000)
+[Detector] Calibrator saved → /home/darsh_run/DS_Final/sentinel_ds/output/calibrator.joblib
+[Bandit] Q-table loaded ← /home/darsh_run/DS_Final/sentinel_ds/output  shape=(20, 20, 5, 3, 3)  visits=6,516,405
+[DataLoader] Found 6 data file(s)
+[DataLoader] Reading: thursday_benign.csv
+[DataLoader]   chunk 1 (.csv): 133,770 rows
+  [Sim] step    5,000  ε=0.6983  cum_R=     -46,745  P=0.000  R=0.000  F1=0.000
+  [Sim] step   10,000  ε=0.0941  cum_R=     -50,625  P=0.000  R=0.000  F1=0.000
+  [Sim] step   15,000  ε=0.0271  cum_R=    -123,385  P=0.000  R=0.000  F1=0.000
+  [Sim] step   20,000  ε=0.0195  cum_R=    -192,985  P=0.000  R=0.000  F1=0.000
+  [Sim] step   25,000  ε=0.0248  cum_R=    -258,065  P=0.000  R=0.000  F1=0.000
+  [Sim] step   30,000  ε=0.0239  cum_R=    -318,665  P=0.000  R=0.000  F1=0.000
+  [Sim] step   35,000  ε=0.1336  cum_R=    -387,145  P=0.000  R=0.000  F1=0.000
+  [Sim] step   40,000  ε=0.0177  cum_R=    -457,465  P=0.000  R=0.000  F1=0.000
+  [Sim] step   45,000  ε=0.0652  cum_R=    -528,305  P=0.000  R=0.000  F1=0.000
+  [Sim] step   50,000  ε=0.0168  cum_R=    -590,305  P=0.000  R=0.000  F1=0.000
+  [Sim] step   55,000  ε=0.0313  cum_R=    -659,465  P=0.000  R=0.000  F1=0.000
+  [Sim] step   60,000  ε=0.0161  cum_R=    -723,345  P=0.000  R=0.000  F1=0.000
+  [Sim] step   65,000  ε=0.0192  cum_R=    -794,425  P=0.000  R=0.000  F1=0.000
+  [Sim] step   70,000  ε=0.0155  cum_R=    -853,985  P=0.000  R=0.000  F1=0.000
+  [Sim] step   75,000  ε=0.0556  cum_R=    -922,145  P=0.000  R=0.000  F1=0.000
+  [Sim] step   80,000  ε=0.0175  cum_R=    -983,905  P=0.000  R=0.000  F1=0.000
+  [Sim] step   85,000  ε=0.0261  cum_R=  -1,040,905  P=0.000  R=0.000  F1=0.000
+  [Sim] step   90,000  ε=0.0145  cum_R=  -1,100,305  P=0.000  R=0.000  F1=0.000
+  [Sim] step   95,000  ε=0.0140  cum_R=  -1,191,065  P=0.000  R=0.000  F1=0.000
+  [Sim] step  100,000  ε=0.0133  cum_R=  -1,301,945  P=0.000  R=0.000  F1=0.000
+  [Sim] step  105,000  ε=0.0128  cum_R=  -1,407,905  P=0.000  R=0.000  F1=0.000
+  [Sim] step  110,000  ε=0.0123  cum_R=  -1,510,145  P=0.000  R=0.000  F1=0.000
+  [Sim] step  115,000  ε=0.0118  cum_R=  -1,611,330  P=0.000  R=0.000  F1=0.000
+  [Sim] step  120,000  ε=0.0115  cum_R=  -1,703,410  P=0.000  R=0.000  F1=0.000
+  [Sim] step  125,000  ε=0.0113  cum_R=  -1,766,890  P=0.000  R=0.000  F1=0.000
+  [Sim] step  130,000  ε=0.0232  cum_R=  -1,857,050  P=0.000  R=0.000  F1=0.000
+[DataLoader] Reading: tuesday_benign.csv
+[DataLoader]   chunk 2 (.csv): 395,976 rows
+  [Sim] step  135,000  ε=0.0100  cum_R=  -1,955,290  P=0.000  R=0.000  F1=0.000
+  [Sim] step  140,000  ε=0.0303  cum_R=  -2,016,370  P=0.000  R=0.000  F1=0.000
+  [Sim] step  145,000  ε=0.0121  cum_R=  -2,083,890  P=0.000  R=0.000  F1=0.000
+  [Sim] step  150,000  ε=0.0119  cum_R=  -2,150,970  P=0.000  R=0.000  F1=0.000
+  [Sim] step  155,000  ε=0.0916  cum_R=  -2,187,850  P=0.000  R=0.000  F1=0.000
+  [Sim] step  160,000  ε=0.0283  cum_R=  -2,188,690  P=0.000  R=0.000  F1=0.000
+  [Sim] step  165,000  ε=0.0100  cum_R=  -2,253,170  P=0.000  R=0.000  F1=0.000
+  [Sim] step  170,000  ε=0.0100  cum_R=  -2,325,450  P=0.000  R=0.000  F1=0.000
+  [Sim] step  175,000  ε=0.0100  cum_R=  -2,399,450  P=0.000  R=0.000  F1=0.000
+  [Sim] step  180,000  ε=0.6150  cum_R=  -2,470,650  P=0.000  R=0.000  F1=0.000
+  [Sim] step  185,000  ε=0.0100  cum_R=  -2,533,330  P=0.000  R=0.000  F1=0.000
+  [Sim] step  190,000  ε=0.0100  cum_R=  -2,600,090  P=0.000  R=0.000  F1=0.000
+  [Sim] step  195,000  ε=0.0320  cum_R=  -2,665,530  P=0.000  R=0.000  F1=0.000
+  [Sim] step  200,000  ε=0.1580  cum_R=  -2,729,810  P=0.000  R=0.000  F1=0.000
+  [Sim] step  205,000  ε=0.0256  cum_R=  -2,799,370  P=0.000  R=0.000  F1=0.000
+  [Sim] step  210,000  ε=0.0253  cum_R=  -2,867,450  P=0.000  R=0.000  F1=0.000
+  [Sim] step  215,000  ε=0.0100  cum_R=  -2,928,770  P=0.000  R=0.000  F1=0.000
+  [Sim] step  220,000  ε=0.0104  cum_R=  -2,988,290  P=0.000  R=0.000  F1=0.000
+  [Sim] step  225,000  ε=0.0100  cum_R=  -3,055,970  P=0.000  R=0.000  F1=0.000
+  [Sim] step  230,000  ε=0.0238  cum_R=  -3,128,770  P=0.000  R=0.000  F1=0.000
+  [Sim] step  235,000  ε=0.0101  cum_R=  -3,178,090  P=0.000  R=0.000  F1=0.000
+  [Sim] step  240,000  ε=0.0100  cum_R=  -3,226,130  P=0.000  R=0.000  F1=0.000
+  [Sim] step  245,000  ε=0.0100  cum_R=  -3,293,330  P=0.000  R=0.000  F1=0.000
+  [Sim] step  250,000  ε=0.0100  cum_R=  -3,366,090  P=0.000  R=0.000  F1=0.000
+  [Sim] step  255,000  ε=0.0100  cum_R=  -3,431,370  P=0.000  R=0.000  F1=0.000
+  [Sim] step  260,000  ε=0.0697  cum_R=  -3,494,530  P=0.000  R=0.000  F1=0.000
+  [Sim] step  265,000  ε=0.0100  cum_R=  -3,566,530  P=0.000  R=0.000  F1=0.000
+  [Sim] step  270,000  ε=0.0100  cum_R=  -3,637,330  P=0.000  R=0.000  F1=0.000
+  [Sim] step  275,000  ε=0.0100  cum_R=  -3,703,530  P=0.000  R=0.000  F1=0.000
+  [Sim] step  280,000  ε=0.0216  cum_R=  -3,764,170  P=0.000  R=0.000  F1=0.000
+  [Sim] step  285,000  ε=0.0665  cum_R=  -3,804,770  P=0.000  R=0.000  F1=0.000
+  [Sim] step  290,000  ε=0.0100  cum_R=  -3,874,130  P=0.000  R=0.000  F1=0.000
+  [Sim] step  295,000  ε=0.0100  cum_R=  -3,936,330  P=0.000  R=0.000  F1=0.000
+  [Sim] step  300,000  ε=0.0209  cum_R=  -4,001,370  P=0.000  R=0.000  F1=0.000
+  [Sim] step  305,000  ε=0.0640  cum_R=  -4,058,890  P=0.000  R=0.000  F1=0.000
+  [Sim] step  310,000  ε=0.0100  cum_R=  -4,122,730  P=0.000  R=0.000  F1=0.000
+  [Sim] step  315,000  ε=0.0100  cum_R=  -4,177,810  P=0.000  R=0.000  F1=0.000
+  [Sim] step  320,000  ε=0.0100  cum_R=  -4,227,130  P=0.000  R=0.000  F1=0.000
+  [Sim] step  325,000  ε=0.0100  cum_R=  -4,291,890  P=0.000  R=0.000  F1=0.000
+  [Sim] step  330,000  ε=0.0257  cum_R=  -4,356,770  P=0.000  R=0.000  F1=0.000
+  [Sim] step  335,000  ε=0.0487  cum_R=  -4,415,730  P=0.000  R=0.000  F1=0.000
+  [Sim] step  340,000  ε=0.0100  cum_R=  -4,475,170  P=0.000  R=0.000  F1=0.000
+  [Sim] step  345,000  ε=0.0100  cum_R=  -4,534,370  P=0.000  R=0.000  F1=0.000
+  [Sim] step  350,000  ε=0.0100  cum_R=  -4,599,370  P=0.000  R=0.000  F1=0.000
+  [Sim] step  355,000  ε=0.0100  cum_R=  -4,659,450  P=0.000  R=0.000  F1=0.000
+  [Sim] step  360,000  ε=0.0100  cum_R=  -4,718,090  P=0.000  R=0.000  F1=0.000
+  [Sim] step  365,000  ε=0.0100  cum_R=  -4,786,730  P=0.000  R=0.000  F1=0.000
+  [Sim] step  370,000  ε=0.0100  cum_R=  -4,851,530  P=0.000  R=0.000  F1=0.000
+  [Sim] step  375,000  ε=0.0100  cum_R=  -4,901,170  P=0.000  R=0.000  F1=0.000
+  [Sim] step  380,000  ε=0.0100  cum_R=  -4,961,890  P=0.000  R=0.000  F1=0.000
+  [Sim] step  385,000  ε=0.0100  cum_R=  -5,030,410  P=0.000  R=0.000  F1=0.000
+  [Sim] step  390,000  ε=0.0100  cum_R=  -5,091,890  P=0.000  R=0.000  F1=0.000
+  [Sim] step  395,000  ε=0.0177  cum_R=  -5,147,970  P=0.000  R=0.000  F1=0.000
+  [Sim] step  400,000  ε=0.0176  cum_R=  -5,201,010  P=0.000  R=0.000  F1=0.000
+  [Sim] step  405,000  ε=0.0100  cum_R=  -5,270,170  P=0.000  R=0.000  F1=0.000
+  [Sim] step  410,000  ε=0.0100  cum_R=  -5,342,770  P=0.000  R=0.000  F1=0.000
+  [Sim] step  415,000  ε=0.0100  cum_R=  -5,418,570  P=0.000  R=0.000  F1=0.000
+  [Sim] step  420,000  ε=0.0100  cum_R=  -5,493,130  P=0.000  R=0.000  F1=0.000
+  [Sim] step  425,000  ε=0.0100  cum_R=  -5,565,970  P=0.000  R=0.000  F1=0.000
+  [Sim] step  430,000  ε=0.0100  cum_R=  -5,641,730  P=0.000  R=0.000  F1=0.000
+  [Sim] step  435,000  ε=0.0100  cum_R=  -5,712,090  P=0.000  R=0.000  F1=0.000
+  [Sim] step  440,000  ε=0.0167  cum_R=  -5,755,490  P=0.000  R=0.000  F1=0.000
+  [Sim] step  445,000  ε=0.0100  cum_R=  -5,805,210  P=0.000  R=0.000  F1=0.000
+  [Sim] step  450,000  ε=0.0100  cum_R=  -5,872,290  P=0.000  R=0.000  F1=0.000
+  [Sim] step  455,000  ε=0.0100  cum_R=  -5,922,770  P=0.000  R=0.000  F1=0.000
+  [Sim] step  460,000  ε=0.0100  cum_R=  -5,981,930  P=0.000  R=0.000  F1=0.000
+  [Sim] step  465,000  ε=0.0100  cum_R=  -6,032,490  P=0.000  R=0.000  F1=0.000
+  [Sim] step  470,000  ε=0.0100  cum_R=  -6,112,250  P=0.000  R=0.000  F1=0.000
+  [Sim] step  475,000  ε=0.0100  cum_R=  -6,205,330  P=0.000  R=0.000  F1=0.000
+  [Sim] step  480,000  ε=0.2595  cum_R=  -6,295,850  P=0.000  R=0.000  F1=0.000
+  [Sim] step  485,000  ε=0.0100  cum_R=  -6,402,770  P=0.000  R=0.000  F1=0.000
+  [Sim] step  490,000  ε=0.0100  cum_R=  -6,509,130  P=0.000  R=0.000  F1=0.000
+  [Sim] step  495,000  ε=0.0100  cum_R=  -6,608,810  P=0.000  R=0.000  F1=0.000
+  [Sim] step  500,000  ε=0.0100  cum_R=  -6,712,690  P=0.000  R=0.000  F1=0.000
+  [Sim] step  505,000  ε=0.0100  cum_R=  -6,810,850  P=0.000  R=0.000  F1=0.000
+  [Sim] step  510,000  ε=0.0194  cum_R=  -6,878,330  P=0.000  R=0.000  F1=0.000
+  [Sim] step  515,000  ε=0.0100  cum_R=  -6,977,250  P=0.000  R=0.000  F1=0.000
+  [Sim] step  520,000  ε=0.0100  cum_R=  -7,082,410  P=0.000  R=0.000  F1=0.000
+  [Sim] step  525,000  ε=0.0100  cum_R=  -7,189,330  P=0.000  R=0.000  F1=0.000
+[DataLoader] Reading: web_brute_force.csv
+[DataLoader]   chunk 3 (.csv): 2,734 rows
+  [Sim] step  530,000  ε=0.2693  cum_R=  -7,251,997  P=0.992  R=1.000  F1=0.996
+[DataLoader] Reading: web_sql_injection.csv
+[DataLoader]   chunk 4 (.csv): 24 rows
+[DataLoader] Reading: web_xss.csv
+[DataLoader]   chunk 5 (.csv): 1,358 rows
+[DataLoader] Reading: wednesday_benign.csv
+[DataLoader]   chunk 6 (.csv): 397,053 rows
+  [Sim] step  535,000  ε=0.0698  cum_R=  -6,881,800  P=1.000  R=1.000  F1=1.000
+  [Sim] step  540,000  ε=0.0100  cum_R=  -6,911,880  P=1.000  R=1.000  F1=1.000
+  [Sim] step  545,000  ε=0.0100  cum_R=  -6,958,840  P=1.000  R=1.000  F1=1.000
+  [Sim] step  550,000  ε=0.0141  cum_R=  -7,017,600  P=1.000  R=1.000  F1=1.000
+  [Sim] step  555,000  ε=0.0139  cum_R=  -7,085,400  P=1.000  R=1.000  F1=1.000
+  [Sim] step  560,000  ε=0.0100  cum_R=  -7,149,680  P=1.000  R=1.000  F1=1.000
+  [Sim] step  565,000  ε=0.0301  cum_R=  -7,223,360  P=1.000  R=1.000  F1=1.000
+  [Sim] step  570,000  ε=0.0297  cum_R=  -7,288,865  P=0.999  R=1.000  F1=1.000
+  [Sim] step  575,000  ε=0.0100  cum_R=  -7,365,265  P=0.999  R=1.000  F1=1.000
+  [Sim] step  580,000  ε=0.0131  cum_R=  -7,428,825  P=0.999  R=1.000  F1=1.000
+  [Sim] step  585,000  ε=0.0100  cum_R=  -7,509,065  P=0.999  R=1.000  F1=1.000
+  [Sim] step  590,000  ε=0.0128  cum_R=  -7,579,545  P=0.999  R=1.000  F1=1.000
+  [Sim] step  595,000  ε=0.0273  cum_R=  -7,644,025  P=0.999  R=1.000  F1=1.000
+  [Sim] step  600,000  ε=0.0100  cum_R=  -7,710,185  P=0.999  R=1.000  F1=1.000
+  [Sim] step  605,000  ε=0.0100  cum_R=  -7,808,665  P=0.999  R=1.000  F1=1.000
+  [Sim] step  610,000  ε=0.0305  cum_R=  -7,910,465  P=0.999  R=1.000  F1=1.000
+  [Sim] step  615,000  ε=0.0100  cum_R=  -8,012,705  P=0.999  R=1.000  F1=1.000
+  [Sim] step  620,000  ε=0.0296  cum_R=  -8,110,705  P=0.999  R=1.000  F1=1.000
+  [Sim] step  625,000  ε=0.0910  cum_R=  -8,213,785  P=0.999  R=1.000  F1=1.000
+  [Sim] step  630,000  ε=0.0100  cum_R=  -8,312,545  P=0.999  R=1.000  F1=1.000
+  [Sim] step  635,000  ε=0.0464  cum_R=  -8,381,585  P=0.999  R=1.000  F1=1.000
+  [Sim] step  640,000  ε=0.0100  cum_R=  -8,446,905  P=0.999  R=1.000  F1=1.000
+  [Sim] step  645,000  ε=0.0252  cum_R=  -8,513,345  P=0.999  R=1.000  F1=1.000
+  [Sim] step  650,000  ε=0.0100  cum_R=  -8,563,785  P=0.999  R=1.000  F1=1.000
+  [Sim] step  655,000  ε=0.0100  cum_R=  -8,630,345  P=0.999  R=1.000  F1=1.000
+  [Sim] step  660,000  ε=0.0100  cum_R=  -8,652,905  P=0.999  R=1.000  F1=1.000
+  [Sim] step  665,000  ε=0.0100  cum_R=  -8,699,425  P=0.999  R=1.000  F1=1.000
+  [Sim] step  670,000  ε=0.0100  cum_R=  -8,767,425  P=0.999  R=1.000  F1=1.000
+  [Sim] step  675,000  ε=0.0111  cum_R=  -8,819,105  P=0.999  R=1.000  F1=1.000
+  [Sim] step  680,000  ε=0.0100  cum_R=  -8,857,985  P=0.999  R=1.000  F1=1.000
+  [Sim] step  685,000  ε=0.0100  cum_R=  -8,922,065  P=0.999  R=1.000  F1=1.000
+  [Sim] step  690,000  ε=0.0100  cum_R=  -8,980,385  P=0.999  R=1.000  F1=1.000
+  [Sim] step  695,000  ε=0.0100  cum_R=  -9,039,345  P=0.999  R=1.000  F1=1.000
+  [Sim] step  700,000  ε=0.0226  cum_R=  -9,098,945  P=0.999  R=1.000  F1=1.000
+  [Sim] step  705,000  ε=0.0100  cum_R=  -9,163,265  P=0.999  R=1.000  F1=1.000
+  [Sim] step  710,000  ε=0.0100  cum_R=  -9,226,465  P=0.999  R=1.000  F1=1.000
+  [Sim] step  715,000  ε=0.0100  cum_R=  -9,302,905  P=0.999  R=1.000  F1=1.000
+  [Sim] step  720,000  ε=0.0100  cum_R=  -9,373,705  P=0.999  R=1.000  F1=1.000
+  [Sim] step  725,000  ε=0.0100  cum_R=  -9,451,305  P=0.999  R=1.000  F1=1.000
+  [Sim] step  730,000  ε=0.0100  cum_R=  -9,516,065  P=0.999  R=1.000  F1=1.000
+  [Sim] step  735,000  ε=0.0100  cum_R=  -9,586,505  P=0.999  R=1.000  F1=1.000
+  [Sim] step  740,000  ε=0.0100  cum_R=  -9,659,465  P=0.999  R=1.000  F1=1.000
+  [Sim] step  745,000  ε=0.0100  cum_R=  -9,734,025  P=0.999  R=1.000  F1=1.000
+  [Sim] step  750,000  ε=0.0100  cum_R=  -9,808,385  P=0.999  R=1.000  F1=1.000
+  [Sim] step  755,000  ε=0.0100  cum_R=  -9,877,105  P=0.999  R=1.000  F1=1.000
+  [Sim] step  760,000  ε=0.0100  cum_R=  -9,943,025  P=0.999  R=1.000  F1=1.000
+  [Sim] step  765,000  ε=0.0100  cum_R= -10,018,505  P=0.999  R=1.000  F1=1.000
+  [Sim] step  770,000  ε=0.0100  cum_R= -10,084,265  P=0.999  R=1.000  F1=1.000
+  [Sim] step  775,000  ε=0.0100  cum_R= -10,152,305  P=0.999  R=1.000  F1=1.000
+  [Sim] step  780,000  ε=0.0100  cum_R= -10,218,505  P=0.999  R=1.000  F1=1.000
+  [Sim] step  785,000  ε=0.0100  cum_R= -10,271,865  P=0.999  R=1.000  F1=1.000
+  [Sim] step  790,000  ε=0.0193  cum_R= -10,315,225  P=0.999  R=1.000  F1=1.000
+  [Sim] step  795,000  ε=0.0100  cum_R= -10,354,825  P=0.999  R=1.000  F1=1.000
+  [Sim] step  800,000  ε=0.0100  cum_R= -10,399,905  P=0.999  R=1.000  F1=1.000
+  [Sim] step  805,000  ε=0.0100  cum_R= -10,454,985  P=0.999  R=1.000  F1=1.000
+  [Sim] step  810,000  ε=0.0100  cum_R= -10,509,945  P=0.999  R=1.000  F1=1.000
+  [Sim] step  815,000  ε=0.0100  cum_R= -10,580,105  P=0.999  R=1.000  F1=1.000
+  [Sim] step  820,000  ε=0.0100  cum_R= -10,641,865  P=0.999  R=1.000  F1=1.000
+  [Sim] step  825,000  ε=0.0100  cum_R= -10,713,225  P=0.999  R=1.000  F1=1.000
+  [Sim] step  830,000  ε=0.0100  cum_R= -10,797,505  P=0.999  R=1.000  F1=1.000
+  [Sim] step  835,000  ε=0.0182  cum_R= -10,882,665  P=0.999  R=1.000  F1=1.000
+  [Sim] step  840,000  ε=0.0100  cum_R= -10,945,785  P=0.999  R=1.000  F1=1.000
+  [Sim] step  845,000  ε=0.0100  cum_R= -11,009,065  P=0.999  R=1.000  F1=1.000
+  [Sim] step  850,000  ε=0.0100  cum_R= -11,083,985  P=0.999  R=1.000  F1=1.000
+  [Sim] step  855,000  ε=0.0100  cum_R= -11,148,065  P=0.999  R=1.000  F1=1.000
+  [Sim] step  860,000  ε=0.0100  cum_R= -11,217,905  P=0.999  R=1.000  F1=1.000
+  [Sim] step  865,000  ε=0.0172  cum_R= -11,272,185  P=0.999  R=1.000  F1=1.000
+  [Sim] step  870,000  ε=0.0100  cum_R= -11,332,785  P=0.999  R=1.000  F1=1.000
+  [Sim] step  875,000  ε=0.0100  cum_R= -11,426,385  P=0.999  R=1.000  F1=1.000
+  [Sim] step  880,000  ε=0.0100  cum_R= -11,530,865  P=0.999  R=1.000  F1=1.000
+  [Sim] step  885,000  ε=0.0100  cum_R= -11,639,385  P=0.999  R=1.000  F1=1.000
+  [Sim] step  890,000  ε=0.0100  cum_R= -11,740,145  P=0.999  R=1.000  F1=1.000
+  [Sim] step  895,000  ε=0.0100  cum_R= -11,831,705  P=0.999  R=1.000  F1=1.000
+  [Sim] step  900,000  ε=0.0100  cum_R= -11,933,305  P=0.999  R=1.000  F1=1.000
+  [Sim] step  905,000  ε=0.0100  cum_R= -12,025,145  P=0.999  R=1.000  F1=1.000
+  [Sim] step  910,000  ε=0.0100  cum_R= -12,126,425  P=0.999  R=1.000  F1=1.000
+  [Sim] step  915,000  ε=0.0100  cum_R= -12,225,665  P=0.999  R=1.000  F1=1.000
+  [Sim] step  920,000  ε=0.0100  cum_R= -12,328,985  P=0.999  R=1.000  F1=1.000
+  [Sim] step  925,000  ε=0.0100  cum_R= -12,436,545  P=0.999  R=1.000  F1=1.000
+  [Sim] step  930,000  ε=0.0100  cum_R= -12,539,065  P=0.999  R=1.000  F1=1.000
+[DataLoader] Done — yielded 6 total chunk(s).
+
+[Pipeline] Simulation done. 930,915 total steps.
+  Final — P=0.9993  R=0.9998  F1=0.9995  Cum_R=-12,555,075
+[Bandit] Q-table saved → /home/darsh_run/DS_Final/sentinel_ds/output  shape=(20, 20, 5, 3, 3)
+[Plot] Saved recall_precision.png
+[Plot] Saved recall_precision_zoomed.png
+[Plot] Saved cumulative_reward.png
+[Plot] Saved action_distribution.png
